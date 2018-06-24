@@ -1,6 +1,6 @@
 {
     "name": "pinyin-tone-convert",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Convert Pinyin tone numbers to tone marks.",
     "main": "index.js",
     "scripts": {
@@ -23,7 +23,7 @@
     },
     "homepage": "https://github.com/oleglegun/pinyin-tone-convert#readme",
     "dependencies": {
-        "pinyin-tone-parse": "0.0.2"
+        "pinyin-tone-parse": "0.1.1"
     },
     "devDependencies": {
         "tap": "^12.0.1"

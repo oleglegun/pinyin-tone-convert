@@ -23,8 +23,19 @@ toneConvert('Zhong1guo2ren2 ai4 he1 cha2 hai2shi5 ka1fei1?')
 // Zhōngguórén ài hē chá háishi kāfēi?
 ```
 
-## Conversion Algorithm
+## Options
 
+Under the hood this library uses `pinyin-tone-parse` library and thus passes `options` object directly to it. Look for all available options [here](https://github.com/oleglegun/pinyin-tone-parse#options).
+
+```js
+const toneConvert = require('pinyin-tone-convert')
+
+toneConvert('pinyin...', options)
+```
+
+## Conversion Rules
+
+This library works based on these rules:
  1. `a` and `e` trump all other vowels and always take the tone mark. 
  2. In the combination `ou`, `o` takes the mark.
  3. In all other cases, the final vowel takes the mark.
