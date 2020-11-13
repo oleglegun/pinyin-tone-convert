@@ -11,4 +11,6 @@ const testCasesValid = [
 
 testCasesValid.forEach(test => {
     tap.equal(toneConvert(test.text, test.options), test.result)
+    // tone marks as input just get left as is
+    tap.equal(toneConvert(toneConvert(test.text, test.options), { allowAnyChar: true }), test.result)
 })
