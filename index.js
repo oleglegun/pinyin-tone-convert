@@ -45,7 +45,7 @@ function convert(text, options) {
  * @returns {String} Word with marked tone
  */
 function mark(word, toneNumber) {
-    if (toneNumber === 5) {
+    if (toneNumber === 5 || toneNumber === null) {
         return word
     }
 
